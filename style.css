@@ -1,0 +1,161 @@
+@media only screen and (max-width: 1250px) {
+    .responsive,
+    .pg-node-id-1,
+    .pg-main-cs-2 {
+        flex-direction: column !important;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .mainHeader,
+    .pg-node-id-2,
+    .pg-main-cs-2 {
+        font-size: 70px !important;
+    }
+}
+
+@media only screen and (max-width: 90000px) {
+    .mainHeader,
+    .pg-node-id-4,
+    .pg-main-cs-2 {
+        font-size: 150px;
+    }
+}
+
+.mainHeader,
+.pg-node-id-5,
+.pg-main-cs-2 {
+    font-family: 'Boogaloo', cursive;
+    color: white;
+    cursor: default;
+}
+
+/* Animation by Nuhman Pk */
+a,
+.pg-node-id-6,
+.pg-main-cs-2 {
+    cursor: pointer;
+    font-family: 'Boogaloo', cursive;
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    transition: 0.2s;
+    width: 13rem;
+    text-align: center;
+}
+
+a:hover,
+a.pg-state-hover,
+.pg-node-id-7,
+.pg-main-cs-2 {
+    letter-spacing: 0.2rem;
+    background: var(--clr);
+    color: var(--clr);
+
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+}
+
+a::before,
+.pg-node-id-8,
+.pg-main-cs-2 {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+}
+
+a span,
+.pg-node-id-9,
+.pg-main-cs-2 {
+    position: relative;
+    z-index: 1;
+}
+
+a i,
+.pg-node-id-10,
+.pg-main-cs-2 {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before,
+.pg-node-id-11,
+.pg-main-cs-2 {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+a:hover i::before,
+a.pg-state-hover i::before,
+.pg-node-id-12,
+.pg-main-cs-2 {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+}
+
+a i::after,
+.pg-node-id-13,
+.pg-main-cs-2 {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+a:hover i::after,
+a.pg-state-hover i::after,
+.pg-node-id-14,
+.pg-main-cs-2 {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+
+    100% {
+        box-shadow: #27272c;
+    }
+}
